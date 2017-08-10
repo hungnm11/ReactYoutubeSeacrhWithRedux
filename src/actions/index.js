@@ -42,7 +42,6 @@ export function fetchData(q) {
     dispatch(getData())
     axios.get(url)
     .then((response) => {
-      console.log('RESPONSE', response)
       dispatch(getDataSuccess(response));
     })
     .catch((err) => {
